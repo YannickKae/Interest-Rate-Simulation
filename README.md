@@ -25,6 +25,11 @@ where:
 - $\gamma$ is the elasticity of volatility.
 - $dW(t)$ represents the increments of a Wiener process (Brownian motion).
 
+#### Special Cases
+- $\gamma = 0$: Vasicek model (normal volatility model)
+- $\gamma = 0.5$: Cox-Ingersoll-Ross model (square root volatility model)
+- $\gamma = 1$: Dothan model (proportional volatility model)
+
 ### Constant Long-term Equilibrium and Dynamic Volatility
 
 For a constant long-term equilibrium rate $\bar{r}$ and a dynamic volatility $\sigma(t)$, the interest rate $r(t)$ follows the SDE:
@@ -48,11 +53,6 @@ For a dynamic long-term equilibrium rate $\theta(t)$ and a dynamic volatility $\
 $$
 dr = -\alpha (r - \theta(t)) \ dt + \sigma(t) \ dW(t)
 $$
-
-### Special Cases
-- $\gamma = 0$: Vasicek model.
-- $\gamma = 0.5$: Cox-Ingersoll-Ross model.
-- $\gamma = 1$: Dothan model.
 
 ## Parameters and Inputs
 
