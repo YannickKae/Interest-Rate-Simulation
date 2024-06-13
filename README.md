@@ -7,7 +7,7 @@
   <i>Cox-Ingersoll-Ross model</i>
 </p>
 
-This Shiny app simulates interest rate paths for one-factor equilibrium models using various stochastic differential equations (SDEs). Users can specify different types of equilibrium and volatility terms to observe how interest rates evolve over time under different scenarios.
+This Shiny app simulates interest rate paths for one-factor equilibrium models using various stochastic differential equations (SDEs). Users can specify different types of equilibrium and volatility terms to observe how interest rates might evolve over time.
 
 ## Stochastic Differential Equations
 
