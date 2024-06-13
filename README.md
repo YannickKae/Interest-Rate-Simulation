@@ -9,7 +9,9 @@
 
 This Shiny app simulates interest rate paths for one-factor equilibrium models using various stochastic differential equations (SDEs). Users can specify different types of equilibrium and volatility terms to observe how interest rates evolve over time under different scenarios.
 
-## Constant Long-term Equilibrium and CEV Volatility
+## Stochastic Differential Equations
+
+### Constant Long-term Equilibrium and CEV Volatility
 
 For a constant long-term equilibrium rate $\bar{r}$ and a constant elasticity of variance (CEV) model, the interest rate $r(t)$ follows the SDE:
 
@@ -23,7 +25,7 @@ where:
 - $\gamma$ is the elasticity of volatility.
 - $dW(t)$ represents the increments of a Wiener process (Brownian motion).
 
-## Constant Long-term Equilibrium and Dynamic Volatility
+### Constant Long-term Equilibrium and Dynamic Volatility
 
 For a constant long-term equilibrium rate $\bar{r}$ and a dynamic volatility $\sigma(t)$, the interest rate $r(t)$ follows the SDE:
 
@@ -31,7 +33,7 @@ $$
 dr = -\alpha (r - \bar{r}) \ dt + \sigma(t) \ dW(t)
 $$
 
-## Dynamic Long-term Equilibrium and CEV Volatility
+### Dynamic Long-term Equilibrium and CEV Volatility
 
 For a dynamic long-term equilibrium rate $\theta(t)$ and a CEV volatility model, the interest rate $r(t)$ follows the SDE:
 
@@ -39,13 +41,18 @@ $$
 dr = -\alpha (r - \theta(t)) \ dt + \sigma r^{\gamma} \ dW(t)
 $$
 
-## Dynamic Long-term Equilibrium and Dynamic Volatility
+### Dynamic Long-term Equilibrium and Dynamic Volatility
 
 For a dynamic long-term equilibrium rate $\theta(t)$ and a dynamic volatility $\sigma(t)$, the interest rate $r(t)$ follows the SDE:
 
 $$
 dr = -\alpha (r - \theta(t)) \ dt + \sigma(t) \ dW(t)
 $$
+
+### Special Cases
+- $\gamma = 0$: Vasicek model.
+- $\gamma = 0.5$: Cox-Ingersoll-Ross model.
+- $\gamma = 1$: Dothan model.
 
 ## Parameters and Inputs
 
