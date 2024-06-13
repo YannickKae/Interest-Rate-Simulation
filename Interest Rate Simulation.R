@@ -1,14 +1,3 @@
-# Set locale to use dot as decimal separator
-Sys.setlocale("LC_NUMERIC", "C")
-
-# Install required packages if not already installed
-if (!require(shiny)) install.packages("shiny")
-if (!require(ggplot2)) install.packages("ggplot2")
-if (!require(shinythemes)) install.packages("shinythemes")
-if (!require(shinybusy)) install.packages("shinybusy")
-if (!require(latex2exp)) install.packages("latex2exp")
-if (!require(tidyr)) install.packages("tidyr")
-
 library(shiny)
 library(ggplot2)
 library(shinythemes)
