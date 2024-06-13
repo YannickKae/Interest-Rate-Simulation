@@ -71,7 +71,7 @@ $$
 ## Using the App
 
 1. **Equilibrium Type**: Select either `Constant` or `Dynamic` equilibrium.
-2. **Volatility Term**: Select either `CEV` or `Dynamic` volatility.
+2. **Volatility Type**: Select either `CEV` or `Dynamic` volatility.
 3. **Input Parameters**: Provide values for $\alpha$, $\sigma$, $\gamma$, $r_0$, $T$, `steps`, `nPaths`, and `confInterval`.
 4. **Simulate**: Click the `Simulate` button to generate interest rate paths.
 5. **Download**: Use the `Download Simulated Paths` button to download the simulated data.
