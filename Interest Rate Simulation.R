@@ -68,7 +68,12 @@ server <- function(input, output, session) {
     }
     
     sdeSubText <- if (input$equilibriumType == "Constant") {
-      paste0('$$dr = -', input$alpha, ' (r - ', input$r_bar, ') dt + ', input$sigma, ' r^{', input$gamma, '} dW(t)$$')
+      if (input$volatilityType == "CEV") {
+        paste0('$$dr = -', input$alpha, ' (r - ', input$r_bar, ') dt + ', input$sigma, ' r^{', input$gamma, '} dW(t)$$')
+      } else {
+        sigmaFunction <- gsub("t", "t", input$sigmaFunction)
+        paste0('$$dr = -', input$alpha, ' (r - ', input$r_bar, ') dt + (', sigmaFunction, ') dW(t)$$')
+      }
     } else {
       thetaFunction <- gsub("t", "t", input$thetaFunction)
       if (input$volatilityType == "CEV") {
