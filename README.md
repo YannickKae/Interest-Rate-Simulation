@@ -64,8 +64,6 @@ $$
   - `CEV`: User specifies $\sigma$ and $\gamma$.
   - `Dynamic`: User specifies $\sigma(t)$ as a function of time $t$.
 
-## Simulation Parameters
-
 - **$\alpha$**: Speed of mean reversion.
 - **$\sigma$**: Volatility parameter (used if `volatilityType` is CEV).
 - **$\gamma$**: Elasticity of volatility (used if `volatilityType` is CEV).
