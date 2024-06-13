@@ -9,12 +9,12 @@
 
 This Shiny app simulates interest rate paths for one-factor equilibrium models using various stochastic differential equations (SDEs). Users can specify different types of equilibrium and volatility terms to observe how interest rates evolve over time under different scenarios.
 
-### Constant Long-term Equilibrium and CEV Volatility
+## Constant Long-term Equilibrium and CEV Volatility
 
 For a constant long-term equilibrium rate $\bar{r}$ and a constant elasticity of variance (CEV) model, the interest rate $r(t)$ follows the SDE:
 
 $$
-dr = -\alpha (r - \bar{r}) \, dt + \sigma r^{\gamma} \, dW(t)
+dr = -\alpha (r - \bar{r}) \, dt + \sigma r^{\gamma} \ dW(t)
 $$
 
 where:
@@ -23,31 +23,31 @@ where:
 - $\gamma$ is the elasticity of volatility.
 - $dW(t)$ represents the increments of a Wiener process (Brownian motion).
 
-### Constant Long-term Equilibrium and Dynamic Volatility
+## Constant Long-term Equilibrium and Dynamic Volatility
 
 For a constant long-term equilibrium rate $\bar{r}$ and a dynamic volatility $\sigma(t)$, the interest rate $r(t)$ follows the SDE:
 
 $$
-dr = -\alpha (r - \bar{r}) \, dt + \sigma(t) \, dW(t)
+dr = -\alpha (r - \bar{r}) \, dt + \sigma(t) \ dW(t)
 $$
 
-### Dynamic Long-term Equilibrium and CEV Volatility
+## Dynamic Long-term Equilibrium and CEV Volatility
 
 For a dynamic long-term equilibrium rate $\theta(t)$ and a CEV volatility model, the interest rate $r(t)$ follows the SDE:
 
 $$
-dr = -\alpha (r - \theta(t)) \, dt + \sigma r^{\gamma} \, dW(t)
+dr = -\alpha (r - \theta(t)) \, dt + \sigma r^{\gamma} \ dW(t)
 $$
 
-### Dynamic Long-term Equilibrium and Dynamic Volatility
+## Dynamic Long-term Equilibrium and Dynamic Volatility
 
 For a dynamic long-term equilibrium rate $\theta(t)$ and a dynamic volatility $\sigma(t)$, the interest rate $r(t)$ follows the SDE:
 
 $$
-dr = -\alpha (r - \theta(t)) \, dt + \sigma(t) \, dW(t)
+dr = -\alpha (r - \theta(t)) \, dt + \sigma(t) \ dW(t)
 $$
 
-### Parameters and Inputs
+## Parameters and Inputs
 
 - **Equilibrium Type**:
   - `Constant`: User specifies $\bar{r}$.
@@ -57,7 +57,7 @@ $$
   - `CEV`: User specifies $\sigma$ and $\gamma$.
   - `Dynamic`: User specifies $\sigma(t)$ as a function of time $t$.
 
-### Simulation Parameters
+## Simulation Parameters
 
 - **$\alpha$**: Speed of mean reversion.
 - **$\sigma$**: Volatility parameter (used if `volatilityType` is CEV).
@@ -76,7 +76,7 @@ $$
 4. **Simulate**: Click the `Simulate` button to generate interest rate paths.
 5. **Download**: Use the `Download Simulated Paths` button to download the simulated data.
 
-## Outputs
+### Outputs
 
 - **Interest Rate Plot**: Displays the simulated interest rate paths.
 - **Summary Plot**: Shows the median and confidence interval of the simulated paths.
