@@ -14,7 +14,7 @@ This Shiny app simulates interest rate paths for one-factor equilibrium models u
 For a constant long-term equilibrium rate $\bar{r}$ and a constant elasticity of variance (CEV) model, the interest rate $r(t)$ follows the SDE:
 
 $$
-dr = -\alpha (r - \bar{r}) \, dt + \sigma r^{\gamma} \ dW(t)
+dr = -\alpha (r - \bar{r}) \ dt + \sigma r^{\gamma} \ dW(t)
 $$
 
 where:
@@ -28,7 +28,7 @@ where:
 For a constant long-term equilibrium rate $\bar{r}$ and a dynamic volatility $\sigma(t)$, the interest rate $r(t)$ follows the SDE:
 
 $$
-dr = -\alpha (r - \bar{r}) \, dt + \sigma(t) \ dW(t)
+dr = -\alpha (r - \bar{r}) \ dt + \sigma(t) \ dW(t)
 $$
 
 ## Dynamic Long-term Equilibrium and CEV Volatility
@@ -36,7 +36,7 @@ $$
 For a dynamic long-term equilibrium rate $\theta(t)$ and a CEV volatility model, the interest rate $r(t)$ follows the SDE:
 
 $$
-dr = -\alpha (r - \theta(t)) \, dt + \sigma r^{\gamma} \ dW(t)
+dr = -\alpha (r - \theta(t)) \ dt + \sigma r^{\gamma} \ dW(t)
 $$
 
 ## Dynamic Long-term Equilibrium and Dynamic Volatility
@@ -44,7 +44,7 @@ $$
 For a dynamic long-term equilibrium rate $\theta(t)$ and a dynamic volatility $\sigma(t)$, the interest rate $r(t)$ follows the SDE:
 
 $$
-dr = -\alpha (r - \theta(t)) \, dt + \sigma(t) \ dW(t)
+dr = -\alpha (r - \theta(t)) \ dt + \sigma(t) \ dW(t)
 $$
 
 ## Parameters and Inputs
