@@ -88,4 +88,4 @@ $$
 
 ## Feature Pipeline
 
-I will add no-arbitrage and multi-factor models as I find more time.
+- no-arbitrage and multi-factor models
