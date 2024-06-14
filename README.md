@@ -89,3 +89,4 @@ $$
 ## Feature Pipeline
 
 - no-arbitrage and multi-factor models
+- paramater estimation based on empirical data
