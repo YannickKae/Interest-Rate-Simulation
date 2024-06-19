@@ -88,5 +88,6 @@ $$
 
 ## Feature Pipeline
 
+- Dynamic equilibrium and volatility also a function of current rate $r$
 - no-arbitrage and multi-factor models
 - paramater estimation based on empirical data
